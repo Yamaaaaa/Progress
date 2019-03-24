@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="30dp">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:id="@+id/time_point_image"
+                />
+
+            <View
+                android:id="@+id/time_amount"
+                android:layout_width="3dp"
+                android:layout_height="40dp"
+                />
+
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:background="@drawable/yellow_green_gradient"
+                android:id="@+id/ambiguous_timeline"/>
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ABABAB"
+            android:text="content"
+            android:id="@+id/matter_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below = "@id/matter_content"
+            android:textColor="#ABABAB"
+            android:text="start time"
+            android:id="@+id/start_time"/>
+    </LinearLayout>
+
+</LinearLayout>
